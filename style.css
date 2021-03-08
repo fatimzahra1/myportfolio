@@ -119,6 +119,11 @@ body {
 .two-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 85%;
+    height: 85%;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .profile-image-wrapper img {

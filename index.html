@@ -39,8 +39,12 @@
 
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(images/wordpress.jpg)"></div>
-                    <div class="img-txt-wrapper">
-                        <div class="subtitle">Wordpress sites developing</div>
+                    <div class="img-text-wrapper">
+                        <div class="icon"><img src="favicon-32x32.png" alt=""></div>
+                        </br>
+                        <div class="subtitle">
+                            Wordpress sites developing
+                        </div>
                     </div>
 
                 </div>
@@ -48,8 +52,10 @@
                 <!-- second picture -->
 
                 <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/develop.png)"></div>
-                    <div class="img-txt-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/develop.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="icon"><img src="favicon-32x32.png" alt=""></div>
+                        </br>
                         <div class="subtitle">Develop your site</div>
                     </div>
 
@@ -59,7 +65,9 @@
 
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(images/designer.jpg)"></div>
-                    <div class="img-txt-wrapper">
+                    <div class="img-text-wrapper">
+                        <div class="icon"><img src="favicon-32x32.png" alt=""></div>
+                        </br>
                         <div class="subtitle">Design your site</div>
                     </div>
 
@@ -69,7 +77,9 @@
 
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(images/security.jpg)"></div>
-                    <div class="img-txt-wrapper">
+                    <div class="img-text-wrapper">
+                        <div class="icon"><img src="favicon-32x32.png" alt=""></div>
+                        </br>
                         <div class="subtitle">Secure your site</div>
                     </div>
 
@@ -79,7 +89,9 @@
 
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(images/compatible.jpg)"></div>
-                    <div class="img-txt-wrapper">
+                    <div class="img-text-wrapper">
+                        <div class="icon"><img src="favicon-32x32.png" alt=""></div>
+                        </br>
                         <div class="subtitle">Make your site compatible</div>
                     </div>
 
@@ -89,7 +101,9 @@
 
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(images/admin.jpg)"></div>
-                    <div class="img-txt-wrapper">
+                    <div class="img-text-wrapper">
+                        <div class="icon"><img src="favicon-32x32.png" alt=""></div>
+                        </br>
                         <div class="subtitle">Hire an admin for your site</div>
                     </div>
 
@@ -103,6 +117,21 @@
 
 
 </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('img-blur');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('img-blur');
+        });
+    });
+</script>
 
 
 </html>

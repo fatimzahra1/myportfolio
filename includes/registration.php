@@ -18,10 +18,14 @@
 
           
           $sql = "INSERT INTO users (firstname, lastname, email, phonenumber, password ) VALUES(?,?,?,?,?)";
+
           $stmtinsert = $db->prepare($sql);
+
           $result = $stmtinsert->execute([$firstname, $lastname, $email, $phonenumber, $password]);
+
           if($result){
-              echo 'seccesfully saved.';
+              echo '<h1>seccesfully saved. <a href="/newsite/myportfolio/index.html">Come back to home page.</a></h1>';
+
             
           }else{
               echo 'There is an error while saving data.';

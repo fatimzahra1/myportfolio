@@ -16,7 +16,20 @@
           $phonenumber   =$_POST['phonenumber'];
           $password      =$_POST['password'];
 
-          echo $firstname . " " . $lastname . " " . $email . " " . $phonenumber . " " . $password; }
+          
+          $sql = "INSERT INTO users (firstname, lastname, email, phonenumber, password ) VALUES(?,?,?,?,?)";
+          $stmtinsert = $db->prepare($sql);
+          $result = $stmtinsert->execute([$firstname, $lastname, $email, $phonenumber, $password]);
+          if($result){
+              echo 'seccesfully saved.';
+            
+          }else{
+              echo 'There are is an error while saving data.';
+          }
+        
+        
+        
+        }
         ?>
   </div> 
 

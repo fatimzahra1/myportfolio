@@ -24,7 +24,7 @@
               echo 'seccesfully saved.';
             
           }else{
-              echo 'There are is an error while saving data.';
+              echo 'There is an error while saving data.';
           }
         
         

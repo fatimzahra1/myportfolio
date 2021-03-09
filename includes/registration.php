@@ -1,3 +1,5 @@
+<?php
+  require_once('config.php'); ?>
 <html>
   <head>
     <title>User registration</title>
@@ -14,9 +16,9 @@
           $phonenumber   =$_POST['phonenumber'];
           $password      =$_POST['password'];
 
-          echo 
+          echo $firstname . " " . $lastname . " " . $email . " " . $phonenumber . " " . $password; }
         ?>
-  </div> $firstname " " $lastname  " "  $email " " $phonenumber " " $password
+  </div> 
 
  
    <div>

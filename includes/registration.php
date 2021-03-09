@@ -1,16 +1,17 @@
-<<!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Users's registration</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-      <h1>lhn</h1>
-        
-    </body>
+  <head>
+    <title>User registration</title>
+  </head>
+  <body>
+
+  <div>
+      <form action="register.php" method="post">
+          <div class="container">
+              <h1>Registration</h1>
+          </div>
+
+      </form>
+  </div>
+
+  </body>
 </html>
